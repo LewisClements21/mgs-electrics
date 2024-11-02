@@ -40,13 +40,14 @@ label i {
     font-size: 110%;
     letter-spacing: 2px;
     list-style-type: none; 
-    color: orange;   
+    color: Blue;   
 }
 a {
     padding : 0 10px;
 }
 #menu > li {
-    margin-bottom: 1em;
+    margin: 1em;
+    text-align: center;
 }
 .active{
     border-bottom: 1px solid darkorange;
@@ -81,9 +82,13 @@ nav {
     }
     #menu {
         display: flex;
-        background-color: blue;
-
+        color: orange;
     }
     #menu a:hover {
         border-bottom: 1px solid orange;
     }
+    .nav-toggle-label {
+        display: none;
+    }
+
+}
