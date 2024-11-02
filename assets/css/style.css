@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'kanit', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #3a3a3a;
+}
+#logo {
+    color: orange;
+    font-size: xxx-large;
+}
+h1, h2 ,h3 {
+    font-family: 'kanit', sans-serif;
+}
+header {
+    background-color: blue;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+label i {
+    color:orange;
+}
+#menu {
+    font-size: 110%;
+    letter-spacing: 2px;
+    list-style-type: none; 
+    color: orange;   
+}
+a {
+    padding : 0 10px;
+}
+#menu > li {
+    margin-bottom: 1em;
+}
+.active{
+    border-bottom: 1px solid darkorange;
+}
+nav {
+    position: absolute;
+    background-color: orange;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+#nav-toggle {
+    display: none;
+}
+#nav-toggle:checked~nav {
+    display: block;
+}
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        background-color: blue;
+    }
+    #menu {
+        display: flex;
+        background-color: blue;
+
+    }
+    #menu a:hover {
+        border-bottom: 1px solid orange;
+    }
